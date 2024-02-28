@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Task = ({ 
+const Task = ({ 
   task: { id, title, state},
   onArchiveTask,
   onPinTask
@@ -13,3 +13,5 @@ export const Task = ({
     </div>
   )
 }
+
+export default Task;
