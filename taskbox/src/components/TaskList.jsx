@@ -12,18 +12,16 @@ const TaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
   }
   
   if (tasks.length === 0) {
-    return (
-      <div className="list-items">TaskList is empty.</div>
-    )
+    return <div className="list-items">TaskList is empty.</div>
   }
 
   return (
     <div className="list-items">
-      { tasks.map( task => {
-        <Task key={task.id} task={task} {...events} />
-      })}
+      { tasks.map( task => (
+          <Task key={task.id} task={task} {...events} />
+      ))}
     </div>
   )
 }
 
-export default TaskList
+export default TaskList;
