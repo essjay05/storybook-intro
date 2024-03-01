@@ -25,7 +25,7 @@ const Task = ({
         </span>
       </label>
 
-      <label htmlFor="title" aria-label={title} classname="title">
+      <label htmlFor="title" aria-label={title} className="title">
         <input
           type="text"
           value={title}
@@ -40,6 +40,7 @@ const Task = ({
           className="pin-bottom"
           onClick={() => onPinTask(id)}
           id={`pinTask-${id}`}
+          aria-label={`pinTask-${id}`}
           key={`pinTask-${id}`}>
           <span className={`icon-star`} />
         </button>

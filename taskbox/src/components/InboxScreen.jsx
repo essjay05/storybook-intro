@@ -29,6 +29,7 @@ const InboxScreen = () => {
       <nav>
         <h1 className="title-page">Taskbox</h1>
       </nav>
+      <TaskList/>
     </div>
   )
 }
